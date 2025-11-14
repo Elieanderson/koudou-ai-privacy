@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité - KOUDOU AI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #7c3aed;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            color: #6d28d9;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background: #f3e8ff;
+            padding: 20px;
+            border-left: 4px solid #7c3aed;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            border-top: 1px solid #e5e7eb;
+            margin-top: 40px;
+        }
+
+        .last-updated {
+            background: #fef3c7;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        a {
+            color: #7c3aed;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+                margin: 20px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>💬 KOUDOU AI</h1>
+        <p>Politique de Confidentialité</p>
+    </div>
+
+    <div class="container">
+        <div class="last-updated">
+            📅 Dernière mise à jour : 14 novembre 2024
+        </div>
+
+        <h2>Introduction</h2>
+        <p>KOUDOU AI ("nous", "notre", "nos") s'engage à protéger votre vie privée. Cette politique de confidentialité explique comment notre extension Chrome collecte, utilise et protège vos informations.</p>
+
+        <h2>Informations que nous collectons</h2>
+
+        <h3>Données stockées localement</h3>
+        <p>KOUDOU AI stocke les informations suivantes <strong>uniquement sur votre appareil</strong> via chrome.storage.local :</p>
+        <ul>
+            <li><strong>Préférences utilisateur</strong> : Ton de commentaire préféré, longueur préférée</li>
+            <li><strong>Historique des commentaires</strong> : Les 50 derniers commentaires générés</li>
+            <li><strong>Statistiques d'utilisation</strong> : Nombre de générations, dates d'utilisation</li>
+            <li><strong>Statut premium</strong> : Indicateur si vous avez acheté l'accès premium</li>
+            <li><strong>Identifiant unique</strong> : UUID généré localement pour gérer le statut premium</li>
+        </ul>
+
+        <div class="highlight">
+            <strong>Important :</strong> Ces données ne quittent JAMAIS votre appareil et ne sont pas transmises à nos serveurs.
+        </div>
+
+        <h3>Données transmises aux services tiers</h3>
+        <p>Pour générer des commentaires, KOUDOU AI envoie les informations suivantes aux API d'intelligence artificielle (OpenAI et DeepSeek) :</p>
+        <ul>
+            <li><strong>Contenu du post LinkedIn</strong> : Le texte du post pour lequel vous générez un commentaire</li>
+            <li><strong>Paramètres de génération</strong> : Ton et longueur souhaités</li>
+        </ul>
+
+        <p><strong>Ce qui n'est PAS envoyé :</strong></p>
+        <ul>
+            <li>Votre nom ou profil LinkedIn</li>
+            <li>Votre adresse email</li>
+            <li>Vos informations personnelles</li>
+            <li>Votre historique de navigation</li>
+            <li>Vos autres commentaires</li>
+        </ul>
+
+        <h3>Données de paiement</h3>
+        <p>Si vous achetez l'accès Premium, les informations de paiement sont traitées directement par <strong>Stripe</strong>, notre processeur de paiement sécurisé. Nous ne stockons ni n'avons accès à vos informations bancaires.</p>
+
+        <h2>Comment nous utilisons vos informations</h2>
+        <p>Nous utilisons les informations collectées pour :</p>
+        <ul>
+            <li><strong>Fournir le service</strong> : Générer des commentaires LinkedIn personnalisés</li>
+            <li><strong>Améliorer l'expérience</strong> : Sauvegarder vos préférences pour une utilisation future</li>
+            <li><strong>Gérer les abonnements</strong> : Vérifier votre statut premium</li>
+            <li><strong>Support client</strong> : Vous aider en cas de problème (uniquement si vous nous contactez)</li>
+        </ul>
+
+        <h2>Partage de données</h2>
+        <p>Nous ne vendons, ne louons ni ne partageons vos données personnelles avec des tiers, sauf dans les cas suivants :</p>
+        <ul>
+            <li><strong>Services d'IA</strong> : OpenAI et DeepSeek (uniquement le contenu des posts pour génération)</li>
+            <li><strong>Processeur de paiement</strong> : Stripe (uniquement pour traiter les paiements)</li>
+            <li><strong>Obligations légales</strong> : Si requis par la loi ou pour protéger nos droits</li>
+        </ul>
+
+        <h2>Sécurité des données</h2>
+        <p>Nous prenons la sécurité de vos données très au sérieux :</p>
+        <ul>
+            <li>✅ Stockage local sécurisé (chrome.storage.local)</li>
+            <li>✅ Connexions HTTPS chiffrées pour toutes les API</li>
+            <li>✅ Pas de serveur central stockant vos données</li>
+            <li>✅ Paiements sécurisés via Stripe (certifié PCI DSS)</li>
+            <li>✅ Pas de tracking publicitaire</li>
+            <li>✅ Pas de cookies tiers</li>
+        </ul>
+
+        <h2>Vos droits (RGPD)</h2>
+        <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous avez les droits suivants :</p>
+        <ul>
+            <li><strong>Droit d'accès</strong> : Accéder aux données stockées localement via les paramètres de l'extension</li>
+            <li><strong>Droit de rectification</strong> : Modifier vos préférences à tout moment</li>
+            <li><strong>Droit à l'effacement</strong> : Supprimer toutes vos données en désinstallant l'extension</li>
+            <li><strong>Droit à la portabilité</strong> : Exporter votre historique depuis l'extension</li>
+            <li><strong>Droit d'opposition</strong> : Refuser l'utilisation du service à tout moment</li>
+        </ul>
+
+        <h2>Services tiers</h2>
+        <p>KOUDOU AI utilise les services tiers suivants :</p>
+        <ul>
+            <li><strong>OpenAI</strong> - Génération de commentaires via GPT-4 (<a href="https://openai.com/privacy" target="_blank">Politique de confidentialité</a>)</li>
+            <li><strong>DeepSeek</strong> - Génération de commentaires (API de secours) (<a href="https://www.deepseek.com/privacy" target="_blank">Politique de confidentialité</a>)</li>
+            <li><strong>Stripe</strong> - Traitement des paiements (<a href="https://stripe.com/privacy" target="_blank">Politique de confidentialité</a>)</li>
+        </ul>
+
+        <h2>Cookies et technologies de suivi</h2>
+        <p>KOUDOU AI n'utilise <strong>aucun cookie</strong> ni technologie de suivi publicitaire.</p>
+        <p>Les seules données stockées le sont via chrome.storage.local (API native de Chrome) pour le fonctionnement de l'extension.</p>
+
+        <h2>Contact</h2>
+        <p>Pour toute question concernant cette politique de confidentialité ou vos données personnelles :</p>
+        <ul>
+            <li><strong>Email</strong> : support@koudou-ai.com</li>
+            <li><strong>Développeur</strong> : ELIE ANDERSON</li>
+            <li><strong>Extension</strong> : KOUDOU AI</li>
+        </ul>
+        <p>Nous nous engageons à répondre à vos demandes dans un délai de 30 jours.</p>
+
+        <div class="highlight">
+            <h3>Résumé en bref</h3>
+            <ul style="margin-left: 0; list-style: none;">
+                <li>🔒 <strong>Vos données restent sur votre appareil</strong></li>
+                <li>📊 <strong>Seul le contenu des posts est envoyé aux API d'IA</strong></li>
+                <li>💳 <strong>Paiements sécurisés via Stripe</strong></li>
+                <li>🚫 <strong>Aucun tracking publicitaire</strong></li>
+                <li>✅ <strong>Conformité RGPD complète</strong></li>
+                <li>🗑️ <strong>Suppression facile : désinstallez l'extension</strong></li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p><strong>Développé avec ❤️ par ELIE ANDERSON</strong></p>
+            <p>KOUDOU AI - Politique de Confidentialité V1.0</p>
+        </div>
+    </div>
+</body>
+</html>
